@@ -173,14 +173,12 @@ function modpeApi() {
     }
 
     function getCarriedItem() {
-        //console.log("getCarriedItem(): WIP");
-        return lastUsedItem;
+        return player.heldItem.blockId;
     }
 
     var Player = {
         getCarriedItem: function () {
-            //console.log("Player.getCarriedItem(): WIP");
-            return lastUsedItem;
+            return player.heldItem.blockId;
         }
     };
     var Entity = {
